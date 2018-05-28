@@ -5,10 +5,10 @@ xmlns:gap="http://phonegap.com/ns/1.0"
 id ="com.phonegap.app9"
 version="1.0.0">
 
-<name> app3 Dia Mundial de la Bicicleta</name>
+<name> app9 Geolocalizacion</name>
 
 <description>
-Aplicacion que muestra Datos del alumno
+Aplicacion que muestra ubicacion
 </description>
 
 <author href="https://build.phonegap.com" email="jonathandanielcruzpazaran@gmail.com">
