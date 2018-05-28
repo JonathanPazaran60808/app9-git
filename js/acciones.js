@@ -26,9 +26,9 @@ var options = {
 	var watchID = navigator.geolocation.getCurrentPosition(onSuccess,onError,options);
 	function onSuccess(position){
 		
-		alert('Latitud:'          +position.coords.latitud      +'\n'+
-		'Longitud:'               +position.coords.longitud     +'\n'+
-		'Altitud:'                +position.coords.altitud       +'\n'+
+		alert('Latitud:'          +position.coords.latitude      +'\n'+
+		'Longitud:'               +position.coords.longitude     +'\n'+
+		'Altitud:'                +position.coords.altitude      +'\n'+
 		'Accuracy:'                +position.coords.accuracy       +'\n'+
 		'Alt.Accuracy:'       +position.coords.aaccuracy      +'\n'+
 		'Heading:'                 +position.coords.headingg       +'\n'+
@@ -51,14 +51,14 @@ var options = {
 var watchID = navigator.geolocation.watchPosition(onSuccess,onError,options);
 function onSuccess(position){
 
-	$('#latitud').html(position.coords.latitud);
-	$('#longitud').html(position.coords.longitud);
-	$('#altitud').html(position.coords.altitud);
+	$('#latitud').html(position.coords.latitude  );
+	$('#longitud').html(position.coords.longitude);
+	$('#altitud').html(position.coords.altitude);
 	$('#accuracy').html(position.coords.accuracy);
-	$('#aaccuracy').html(position.coords.aaccuracy );
+	$('#aaccuracy').html(position.coords.aaccuracy);
 	$('#headingg').html(position.coords.headingg);
 	$('#speed').html(position.coords.speed);
-	$('#timestamp').html(position.Timestamp);
+	$('#timestamp').html(position.timestamp);
 };
 
 function onError(error){
