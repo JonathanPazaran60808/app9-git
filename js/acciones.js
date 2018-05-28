@@ -1,7 +1,7 @@
 // JavaScript Document
 
 $(document).ready(function(e) {
-document.addEventListener("deviceready", onDeviceReady, false);
+document.addEventListener ("deviceready", onDeviceReady, false);
 
 });
 
@@ -18,12 +18,12 @@ function onDeviceReady(){
 }
 
 function getPosition(){
-	var options ={
-		enableHighAccuracy:true,
+var options = {
+		enableHighAccuracy :true,
 		maximumAge:3600000
 	}
 	
-	var watchID= navigator.geolocation.getCurrentPosition(onSuccess,onError,options);
+	var watchID = navigator.geolocation.getCurrentPosition(onSuccess,onError,options);
 	function onSuccess(position){
 		
 		alert('Latitude:'          +position.coords.latitude       +'\n'+
@@ -42,13 +42,13 @@ function getPosition(){
 	}
 
 function watchPosition(){
-var options={
-	maximumAge:3600000,
-	timeout:3000,
-	enableHighAccuracy:true,
+var options = {
+	maximumAge : 3600000,
+	timeout : 3000,
+	enableHighAccuracy : true,
 }
 
-var watchID=navigator.geolocation.watchPosition(onSuccess,onError,options);
+var watchID = navigator.geolocation.watchPosition(onSuccess,onError,options);
 function onSuccess(position){
 
 	$('#latitud').html(position.coords.latitude);

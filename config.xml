@@ -2,33 +2,41 @@
 
 <widget xmlns ="http://www.w3.org/ns/widgets"
 xmlns:gap="http://phonegap.com/ns/1.0"
-id ="com.phonegap.example9"
+id ="com.phonegap.app9"
 version="1.0.0">
 
-<name> app9 Geolocalizacion</name>
+<name> app3 Dia Mundial de la Bicicleta</name>
 
 <description>
-Muesta las cordenadas segun GPS
+Aplicacion que muestra Datos del alumno
 </description>
 
 <author href="https://build.phonegap.com" email="jonathandanielcruzpazaran@gmail.com">
 Cruz Pazaran Jonathan Daniel
 </author>
 
-<!--Personaliza la aplicacion y plataforma -->
-<preference name=" orientation" value="default"/>
-<!--<preference name=" orientation" value="portrait"/>
-<preference name=" orientation" value="landscape"/>-->
-<preference name="target-device" value="universal"/>
-<preference name="fullscreen" value="true"/>
-<preference name="android-installLocation" value="auto"/>
-<preference name="permissions" value="INTERNET"/>
-
-<!--Plugins-->
-<!--Core plugins-->
-<plugin name="cordova-plugin-device" spec="~1.1.4"/>
-<plugin name="cordova-plugin-vibration" spec="~2.1.3"/>
-<plugin name="cordova-plugin-dialogs" spec="~1.3.1"/>
+<!--Personaliza la aplicacion y plataforma-->
+ <preference name="orientation"  value="default"/>
+ <!--<preference name="orientation"  value="portrait"/>
+ <preference name="orientation"  value="landscape"/>-->
+ <preference name="target-device"  value="universal"/>
+ <preference name="fullscreen"  value="true"/>
+ <preference name="android-installLocation"  value="auto"/>
+ <preference name="permissions" value="INTERNET"/>
+ 
+  <!--Para accesar a paginas de internet-->
+ <allow-intent href="https://*/*/*/*/*"/>
+ <access origin="https://*//*/*/*/*"/>
+ <allow-intent href="http://*/*/*/*/*"/>
+ <access origin="http://*/*/*/*/*"/>
+ <plugin name="cordova-plugin-whitelist" source="npm"/> 
+  
+ 
+ <!--Plugins-->
+ <!--Core Plugins-->
+ <plugin name="cordova-plugin-device" spec="~1.1.4"/>
+ <plugin name="cordova-plugin-vibration" spec="~2.1.3"/>
+ <plugin name="cordova-plugin-dialogs" spec="~1.3.1"/>
 
 <plugin name="cordova-plugin-geolocation" spec="2.4.3"/>
 <!--Third party plugins-->
